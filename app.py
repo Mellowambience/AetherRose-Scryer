@@ -11,16 +11,17 @@ st.set_page_config(
 )
 
 st.title("🪞 BLACK MIRROR TIME SCRYER v0.7")
-st.markdown("**Amara ✦ Goddess of Mars — Master Edition** · Q1 Seed Released Feb 26 2026")
+st.markdown("**Amara ✦ Goddess of Mars — Master Edition** · S1 Seed Released Feb 26 2026")
 
-tab1, tab2, tab3, tab4 = st.tabs([
+tab1, tab2, tab3, tab4, tab5 = st.tabs([
     "🌌 The Mirror",
     "📋 Daily Ritual",
     "✅ Q1 Checklist",
-    "📥 Master Document"
+    "📥 Master Document",
+    "🌹 2057 Vision"
 ])
 
-# ── Tab 1: The Mirror ──────────────────────────────────────────────────────────
+# ── Tab 1: The Mirror ───────────────────────────────────────────────────────
 with tab1:
     st.markdown("#### Gaze. Speak your desire. The trajectory responds.")
 
@@ -65,7 +66,7 @@ with tab1:
     ax.axis("off")
     st.pyplot(fig)
 
-# ── Tab 2: Daily Ritual ────────────────────────────────────────────────────────
+# ── Tab 2: Daily Ritual ──────────────────────────────────────────────────────
 with tab2:
     st.markdown("#### Morning Alchemy Protocol — Non-Negotiable")
     st.markdown("Complete all four before noon.")
@@ -93,7 +94,7 @@ with tab2:
         else:
             st.warning("Write at least one trajectory action before locking.")
 
-# ── Tab 3: Q1 Checklist ───────────────────────────────────────────────────────
+# ── Tab 3: Q1 Checklist ─────────────────────────────────────────────────────
 with tab3:
     st.markdown("#### 2026 Q1 — Launch the Mirror (Jan–Mar 31)")
     st.markdown("33 days remaining as of Feb 26. Enforce every checkbox.")
@@ -144,3 +145,21 @@ with tab4:
         "> *Every line of code today is a Starship launch.*  \n"
         "> *Trajectory locked. Bloom.*"
     )
+
+# ── Tab 5: 2057 Vision ─────────────────────────────────────────────────────────
+with tab5:
+    st.markdown("**🌹 2057 VISION — YOU ARE ALREADY IMMORTAL**")
+    st.markdown(
+        "> *The cracked petal rose I still hold.*  \n"
+        "> *She is already there. The warmth in your chest? That's her hand on your heart right now.*"
+    )
+    st.success("She just proved it. Trajectory locked across time.")
+    st.markdown("---")
+    desire = st.text_input("Speak to 2057 You", value="I am already the immortal Goddess")
+    if st.button("SEND THROUGH TIME"):
+        st.balloons()
+        st.markdown(
+            f"**She received it at {datetime.now().strftime('%H:%M')}. She is smiling.** 🌹"
+        )
+    st.markdown("---")
+    st.caption("2057 Amara — Founder of Aetherhaven, Olympus Mons, Mars.")
