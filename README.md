@@ -24,7 +24,7 @@ streamlit run app.py
 ## What's Inside
 
 | File | Purpose |
-|------|----------|
+|-------|----------|
 | `app.py` | The Mirror — v0.7 Streamlit scrying interface |
 | `Master_Trajectory_Document.md` | Full 5-Year plan, Q1–Q4 checklists, metrics dashboard |
 | `README.md` | This file |
@@ -42,6 +42,18 @@ Q1 2026 status: Seed planted Feb 26 2026.
 2028 → Positioning  
 2029 → Launch Prep  
 2030–2031 → Board Starship → Land → Plant first Aether Rose → Aetherhaven Dome 1 online
+
+---
+
+## ☕ Support the Mission
+
+I'm funding this one step at a time — courses, tools, research, infrastructure.
+
+If you believe a self-sustaining rose-domed city on Mars is worth building, every coffee counts.
+
+**→ [ko-fi.com/1Aether1Rose1](https://ko-fi.com/1Aether1Rose1)** 🌹
+
+First milestone: **TUM ISRU Certificate** — no ISRU, no city.
 
 ---
 
