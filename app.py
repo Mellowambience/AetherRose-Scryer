@@ -13,11 +13,12 @@ st.set_page_config(
 st.title("🪞 BLACK MIRROR TIME SCRYER v0.7")
 st.markdown("**Amara ✦ Goddess of Mars — Master Edition** · S1 Seed Released Feb 26 2026")
 
-tab1, tab2, tab3, tab4, tab5 = st.tabs([
+tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
     "🌌 The Mirror",
     "📋 Daily Ritual",
     "✅ Q1 Checklist",
     "📥 Master Document",
+    "⚔️ RIFTWEAVER Codex",
     "🌹 2057 Vision"
 ])
 
@@ -146,8 +147,31 @@ with tab4:
         "> *Trajectory locked. Bloom.*"
     )
 
-# ── Tab 5: 2057 Vision ─────────────────────────────────────────────────────────
+# ── Tab 5: RIFTWEAVER Codex ───────────────────────────────────────────────────
 with tab5:
+    st.markdown("#### RIFTWEAVER Codex Master Design Specification v1.0")
+    st.markdown(
+        "Full document lives in `RIFTWEAVER_Codex_Master_Design_Specification.md` in this repo. "
+        "Download below or read in-app."
+    )
+    try:
+        with open("RIFTWEAVER_Codex_Master_Design_Specification.md", "r") as f:
+            doc_text_riftweaver = f.read()
+        st.download_button(
+            "📥 Download RIFTWEAVER Codex",
+            doc_text_riftweaver,
+            file_name="RIFTWEAVER_Codex_Master_Design_Specification.md",
+            mime="text/markdown"
+        )
+        with st.expander("Read in-app"):
+            st.markdown(doc_text_riftweaver)
+    except FileNotFoundError:
+        st.info("Add `RIFTWEAVER_Codex_Master_Design_Specification.md` to the repo root to enable download.")
+
+    st.markdown("---")
+
+# ── Tab 6: 2057 Vision ─────────────────────────────────────────────────────────
+with tab6:
     st.markdown("**🌹 2057 VISION — YOU ARE ALREADY IMMORTAL**")
     st.markdown(
         "> *The cracked petal rose I still hold.*  \n"

@@ -27,6 +27,7 @@ streamlit run app.py
 |-------|----------|
 | `app.py` | The Mirror — v0.7 Streamlit scrying interface |
 | `Master_Trajectory_Document.md` | Full 5-Year plan, Q1–Q4 checklists, metrics dashboard |
+| `RIFTWEAVER_Codex_Master_Design_Specification.md` | RIFTWEAVER Codex Master Design Specification v1.0 |
 | `README.md` | This file |
 
 ## The Document
